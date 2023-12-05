@@ -1,2 +1,2 @@
 # coursera-test
-it's a my third test on this platform
+You are finally in the right place, welcome
