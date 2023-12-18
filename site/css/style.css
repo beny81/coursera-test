@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    }
+
+body{
+   
+     font-family: Arial, Helvetica, sans-serif;
+    }
+
+h1{
+    margin-bottom: 15px;
+    text-aLign: center;
+    font-size: 1.75em;
+    }
+
+#section1 {
+       background-color: #808080; /*gray*/
+       border:1px solid black;
+       width: 90%;
+       margin: 5%;
+      
+       
+    
+      }
+
+#section2 {
+       background-color:#DEB887;/*burlywood */
+       border:1px solid black;
+       width: 90%;
+       margin: 5%;
+    
+       }
+
+#section3 {
+     background-color:#404040;/*darkgray*/
+     border:1px solid black;
+     width: 90%;
+     margin: 5%;
+       
+    }
+
+#title1{
+    background-color:pink;
+    border:1px solid black;
+    margin: 0px;
+    padding:10px;
+    font-size: 1.25em;
+    
+    float: right;
+    }
+
+#title2{
+    background-color:maroon;
+    border:1px solid black;
+    margin:0;
+    padding:10px;
+    font-size: 1.25em;
+    float: right;
+    
+    } 
+
+#title3{
+    background-color:red;
+    border:1px solid black;
+    margin:0;
+    padding: 10px;
+    font-size: 1.25em;
+    float:right;
+    
+    }
+p{
+    clear:right;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+.row {
+       width:100%;
+       
+    }
+
+/* Desktop*/
+@media (min-width: 992px){
+
+    .col-lg-4{
+              float:left;
+             
+       
+
+        }
+    .col-lg-4{
+      width:33.33%;
+    }
+
+    
+    }
+
+ /*Tablet*/
+@media (max-width: 991px) and (min-width: 768px){
+     .col-md-6, .col-md-12,#section3 {
+                             float:left;
+                             
+         }
+   
+    #section3 {
+     background-color:#404040;/*darkgray*/
+     border:1px solid black;
+     width: 95%;
+     margin:2.3%;
+  
+       
+    
+    
+    }
+    .col-md-6{
+      width:50%;
+    }
+
+.col-md-12{
+      width:100%;
+      
+    }
+
+    }
+
+
