@@ -20,11 +20,11 @@
              };
 
         xhr.open("GET",requestURL, true);
-        xhr.responseType= "text";
-        xhr.send();
+        xhr.send(null);
         
-        console.log("before the answer ");
+        console.log(" Now before the answer ");
         console.log(xhr.responseText);
+        console.log(xhr.response);
         console.log("after the answer");
         
         
