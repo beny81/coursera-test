@@ -11,12 +11,15 @@ document.addEventListener("DOMContentLoaded",
                           texte="Big Mike was born";
                           }
                        else if (texte==="2024-02-26"){
-                              ajax.sendGetRequest("data/data.txt", function (xhr){
-                                  texte= xhr.response;
-                                  console.log(xhr.response);
+                             console.log("hello");
+                             ajax.sendGetRequest("data/data.txt", function (xhr){
+                                    texte= xhr.response;
+                                    console.log(xhr.response);
+                                    console.log("hello in ajaxFunction");
                                   
                               
                               });
+                             console.log("hello3");
                          
                           }          
                        else{
