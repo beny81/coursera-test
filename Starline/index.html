@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset= "utf-8">
+        <title> LOVE</title>
+        <script>  
+            document.addEventListener("DOMContentLoaded", 
+            function (event){
+              document.querySelector("button")
+                  .addEventListener("click", sayhello);
+                  function sayhello (event){
+                  let texte = document.getElementById("texte").value;
+                      texte = "Sorry we do not have '" + texte + "' on this platform"
+                  document.querySelector("div")
+                      .textContent = texte;    
+           
+        }});</script>
+    </head>
+    <body>
+        <h1> Starline🖤</h1>
+        <input id="texte" type=text>
+        <button>  search</button>
+        <div>  </div> 
+    </body>            
+</html>
