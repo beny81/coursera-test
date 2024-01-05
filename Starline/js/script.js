@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded",
                           }
                        else if (texte==="2024-02-26"){
                               ajax.sendGetRequest("data/data.txt", function (xhr){
-                                  texte= xhr.responseText;
-                                  console.log(xhr);
+                                  texte= xhr.response;
+                                  console.log(xhr.response);
                                   
                               
                               });
