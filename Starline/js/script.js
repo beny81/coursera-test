@@ -10,6 +10,15 @@ document.addEventListener("DOMContentLoaded",
                       else if (texte==="1999-10-18"){
                           texte="Big Mike was born";
                           }
+                       else if (texte==="2024-02-26"){
+                              ajax.sendGetRequest("data/data.txt", function (xhr){
+                                  texte= xhr.responseText;
+                                  console.log(xhr);
+                                  
+                              
+                              });
+                         
+                          }          
                        else{
                             texte = "Sorry we do not have '" + texte + "' on this platform";
                            }
