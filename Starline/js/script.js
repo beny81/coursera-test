@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded",
                             texte = "Sorry we do not have '" + texte + "' on this platform";
                            }
                         
-                      document.querySelector("div")
+                      document.querySelector("#answer")
                               .textContent = texte;    
            
                       }
