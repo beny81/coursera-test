@@ -21,6 +21,10 @@
 
         xhr.open("GET",requestURL, true);
         xhr.responseType= "text";
+        console.log("the answer is:");
+        console.log(xhr.responseText);
+        console.log("the answer was:");
+        
         xhr.send();
      };
     
