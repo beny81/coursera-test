@@ -17,6 +17,9 @@
         const xhr = getNewRequest();
         xhr.onreadystatechange = function () {
             console.log(this);
+            xhr=this;
+            console.log("1-before this.responseText");
+            console.log(this.responseText);
             handleResponse(xhr, responseHandler);
              };
 
@@ -25,6 +28,9 @@
         
         console.log(" Now before the answer ");
         console.log(xhr.responseText);
+
+        console.log("2-before this.responseText");
+        console.log(this.responseText);
         console.log(xhr.response);
         console.log("after the answer");
         
