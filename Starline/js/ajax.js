@@ -14,7 +14,7 @@
         }
 
     ajax.sendGetRequest= function (requestURL, responseHandler){
-        const xhr = getNewRequest();
+        let xhr = getNewRequest();
         xhr.onreadystatechange = function () {
             console.log(this);
             xhr=this;
