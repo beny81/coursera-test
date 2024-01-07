@@ -40,7 +40,7 @@
     function handleResponse(xhr, responseHandler){
         if((xhr.readystate== 4) && (xhr.status==200)){
             
-            responseHandler(xhr);
+            responseHandler(JSON.parse(xhr.responseText));
          }
       }
     window.ajax= ajax;
