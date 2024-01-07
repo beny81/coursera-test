@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded",
                           }
                        else if (texte==="2024-02-26"){
                              console.log("hello");
-                             ajax.sendGetRequest("data/data.txt", function (xhr){
-                                    texte= xhr.response;
-                                    console.log(xhr.response);
+                             ajax.sendGetRequest("data/data.json", function (xhr){
+                                    texte= xhr.message+ " from "+ xhr.from;
+                                    console.log(xhr);
                                     console.log("hello in ajaxFunction");
                                   
                               
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded",
                            }
                         
                       document.querySelector("#answer")
-                              .textContent = texte;    
+                              .innerHTML = texte;    
            
                       }
                });
