@@ -1,11 +1,15 @@
-// document.addEventListener("DOMContentLoaded", 
-//       function (event){
-//               document.querySelector("whatsapp")
-//                       .addEventListener("click",textMe);
-//               function texteMe (event){
-                      
-//                       document.querySelector("#answer")
-//                               .textContent = texte;    
+document.addEventListener("DOMContentLoaded", 
+      function (event){
+              document.querySelector(".navbar-toggler")
+                      .addEventListener("blur", function(event){
+                      let screenWidth = window.innerWidth;
+                      console.log(screenWidth);
+                      if(screenWidth<769){
+                          
+                           screenWidth= document.querySelector(".navbar-toggler") .click();
+                                    
+                          }
+                        
            
-//                       }
-//                });
+                      });
+               });
