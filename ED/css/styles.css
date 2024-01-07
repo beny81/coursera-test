@@ -1,0 +1,49 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top:15px;
+    background-color:#330033;  /*#FF00FF;fuchsia */
+    border: 1px solid black;
+    color:white;
+    margin:0px;
+    }
+/* .container-fluid{
+     padding:0;
+    }  */
+/* h1{
+    
+    }*/
+/* body.#nav1{
+    margin-top:20px;
+    background-color:#330033;
+    }  */
+nav{
+    margin-top:-20px;
+    
+    } 
+#brandName{
+    font-size:0.6em;
+    /* border:1px solid black; */
+    position:relative;
+    float:left;
+    
+    /* height:100%; */
+    }
+.carousel{
+      
+     padding:0;
+    }
+.col-12{
+       height:20px;
+    }
+.texte{
+    font-size:0.8em;
+}
+#texte2{
+    font-size:0.5em;
+}
+.cours{
+     height:300px;
+    /* border:1px solid black; */
+    }
+
+
