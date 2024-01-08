@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> 💅ED💜</title>
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-           T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+        <title> 💅ED💜 </title>
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-           T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
            
@@ -13,7 +13,7 @@
     <body>
         <nav id="nav1" class="navbar sticky-top navbar-expand-md bg-body-tertiary">
            <div class="container-fluid">
-           <a class="navbar-brand text-center " href="index.html"><h1 id="brandName"  class="badge text-bg-secondary"> ED💜 <br>                        PROFESSIONNAL  <br>                     SCHOOL AND SALON </h1></a>
+           <a class="navbar-brand text-center " href="index.html"><h1 id="brandName"  class="badge text-bg-secondary">ED💜 <br>                        PROFESSIONNAL  <br>                     SCHOOL AND SALON </h1></a>
            <button type="button" class="btn btn-outline-success d-md-none d-lg-none "><a class="link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" target="_blank" href=" https://wa.me/50948588704?text=Je suis intéressé(e) avec vos cours, aidez moi à faire les suivis, merci!"> <img src="image/whatsapp.svg" alt="Whatsapp" width="30" height="24">Contact us </a>
            </button>
              
@@ -27,7 +27,7 @@
           <a  id="home" class="nav-link active" aria-current="page" target="_blank" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a id="courses" class="nav-link" href="#">Liste De Cours</a>
+          <a id="courses" class="nav-link" href="#LDC">Liste De Cours</a>
         </li>
           <li class="nav-item">
           <a class="nav-link" href="#">Horaire</a>
@@ -62,7 +62,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="image/slide1.jpeg" class="d-block w-100" alt="exemple de maquillage"  height="300">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption ">
                   <h5>First slide label</h5>
                   <p>Some representative placeholder content for the first slide.</p>
                 </div>
@@ -70,7 +70,7 @@
                   
             <div class="carousel-item">
               <img src="image/slide2.jpeg" class="d-block w-100" alt="exemple de maquillage"  height="300">
-              <div class="carousel-caption d-none d-md-block">
+              <div id="slide2" class="carousel-caption ">
                  <h5>Second slide label</h5>
                  <p>Some representative placeholder content for the second slide.</p>
               </div>
@@ -78,7 +78,7 @@
                   
             <div class="carousel-item">
               <img src="image/slide3.jpeg" class="d-block w-100" alt="exemple de maquillage"  height="300">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption ">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
               </div>
@@ -107,69 +107,207 @@
              
          </div>
          
-         <div class=" col-7">
+         <div class="  col-7">
              <img src="image/design.jpeg" class="d-block w-100" alt="exemple de maquillage"  height="300">
              
          </div>
          <div class=" col-5">
              <h5>The best makeup school ever</h5>
              <hr>
-             <p class="texte">Unleash your beauty potential at our premier makeup school! Elevate your skills with expert guidance and hands-on experience. Be your best masterpiece
+             <p  class="texte">Unleash your beauty potential at our premier makeup school! Elevate your skills with expert guidance and hands-on experience. Be your best masterpiece
              
              
              </p>
-             <div>
+             <div  >
                  <button type="button" class="btn btn-sm btn-outline-light  "><a class=" text-center link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" target="_blank" href="#"> <p id="texte2"> READ MORE ABOUT US</p> </a>
            </button></div>
              
         </div>
-        
-         <div class=" col-12">
-             
+          <div id= "divLDC" class=" col-12">
+              <h4 id= "LDC" >Listes Des Cours</h4>
          </div>
-
+       
+            
          
-             <h4>Listes Des Cours</h4>
-         <div class=" col-12">
-             
-         </div>
-
-         
-         <div class="  cours  col-4">
+         <div  class="  cours  col-4">
              <img src="image/ongleSimple.jpeg" class="d-block w-100" alt="Ongle Simple"  height="100">
              <p > Ongle Simple</p>
              <p class="texte"> c'est le fait de faire blablabla</p>
-         </div>
+             <!-- Button trigger modal -->
+             <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+               Read more
+             </button>
+
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                       <div class="modal-header">
+                       <h2 class="modal-title fs-5" id="exampleModalLabel">Ongle Simple</h2>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      "Découvrez l'art du maquillage des ongles avec notre cours simple et efficace. Des techniques de base aux tendances actuelles, apprenez à sublimer vos ongles avec style et confiance. Soyez prêt(e) à briller avec vos créations uniques!"
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                       
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div> <!-- end of cours col-4 -->
          <div class=" cours  col-4">
             <img src="image/poseDongle.jpeg" class="d-block w-100" alt="Ongle Simple"  height="100">
              <p > Pose d'Ongle</p>
              <p class="texte"> c'est le fait de faire blablabla</p>
+          <!-- Button trigger modal -->
+             <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModalFirst">
+               Read more
+             </button>
+
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModalFirst" tabindex="-1" aria-labelledby="exampleModalLabelFirst" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                       <div class="modal-header">
+                       <h2 class="modal-title fs-5" id="exampleModalLabelFirst">Pose d'Ongle</h2>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      "Découvrez l'art du maquillage des ongles avec notre cours simple et efficace. Des techniques de base aux tendances actuelles, apprenez à sublimer vos ongles avec style et confiance. Soyez prêt(e) à briller avec vos créations uniques!"
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                       
+                    </div>
+                  </div>
+               </div>
+            </div>
          </div>
          <div class=" cours col-4">
              <img src="image/acrilique.jpeg" class="d-block w-100" alt="Ongle Simple"  height="100">
              <p > Acrilique simple (couleur)</p>
              <p class="texte"> c'est le fait de faire blablabla</p>
-         </div>
-          <div class=" cours  col-4">
-             <img src="image/baby.jpeg" class="d-block w-100" alt="Ongle Simple"  height="100">
-             <p > Baby Boomer</p>
-             <p class="texte"> c'est le fait de faire blablabla</p>
-         </div>
-          <div class=" cours  col-4">
-             <img src="image/perfect.jpeg" class="d-block w-100" alt="Ongle Simple"  height="100">
-             <p > Perfect French</p>
-             <p class="texte"> c'est le fait de faire blablabla</p>
+         <!-- Button trigger modal -->
+             <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+               Read more
+             </button>
+
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                       <div class="modal-header">
+                       <h2 class="modal-title fs-5" id="exampleModalLabel2">Acrilique simple</h2>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      "Découvrez l'art du maquillage des ongles avec notre cours simple et efficace. Des techniques de base aux tendances actuelles, apprenez à sublimer vos ongles avec style et confiance. Soyez prêt(e) à briller avec vos créations uniques!"
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                       
+                    </div>
+                  </div>
+               </div>
+            </div>
          </div>
          <div class=" cours  col-4">
              <img src="image/fleur.jpeg" class="d-block w-100" alt="Ongle Simple"  height="100">
              <p > Fleur 3D</p>
              <p class="texte"> c'est le fait de faire blablabla</p>
+          <!-- Button trigger modal -->
+             <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+               Read more
+             </button>
+
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                       <div class="modal-header">
+                       <h2 class="modal-title fs-5" id="exampleModalLabel3">Fleur 3D</h2>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      "Découvrez l'art du maquillage des ongles avec notre cours simple et efficace. Des techniques de base aux tendances actuelles, apprenez à sublimer vos ongles avec style et confiance. Soyez prêt(e) à briller avec vos créations uniques!"
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                       
+                    </div>
+                  </div>
+               </div>
+            </div>
          </div>
+          <div class=" cours  col-4">
+             <img src="image/fleur.jpeg" class="d-block w-100" alt="Ongle Simple"  height="100">
+             <p > Fleur 3D</p>
+             <p class="texte"> c'est le fait de faire blablabla</p>
+          <!-- Button trigger modal -->
+             <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+               Read more
+             </button>
 
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                       <div class="modal-header">
+                       <h2 class="modal-title fs-5" id="exampleModalLabel4">Fleur 3D</h2>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      "Découvrez l'art du maquillage des ongles avec notre cours simple et efficace. Des techniques de base aux tendances actuelles, apprenez à sublimer vos ongles avec style et confiance. Soyez prêt(e) à briller avec vos créations uniques!"
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                       
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          <div class=" cours  col-4">
+             <img src="image/fleur.jpeg" class="d-block w-100" alt="Ongle Simple"  height="100">
+             <p > Fleur 3D</p>
+             <p class="texte"> c'est le fait de faire blablabla</p>
+          <!-- Button trigger modal -->
+             <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+               Read more
+             </button>
 
-
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                       <div class="modal-header">
+                       <h2 class="modal-title fs-5" id="exampleModalLabel5">Fleur 3D</h2>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      "Découvrez l'art du maquillage des ongles avec notre cours simple et efficace. Des techniques de base aux tendances actuelles, apprenez à sublimer vos ongles avec style et confiance. Soyez prêt(e) à briller avec vos créations uniques!"
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                       
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer class="row"> 
+             <hr>
+           <div class="col-6">
+               Horaire: 9h-11h
+                      
+           
+           
+           </div>
          
-        </div>  <!-- end of <div.row>    -->
+         
+         </footer>
     </div> <!-- end of <div.container-fluid3>     --> 
       
      
