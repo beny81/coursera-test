@@ -1,15 +1,20 @@
 document.addEventListener("DOMContentLoaded", 
-      function (event){
+      function (event){let b=1; 
               document.querySelector(".navbar-toggler")
-                      .addEventListener("blur", function(event){
+                      .addEventListener("click", function(event){
                       let screenWidth = window.innerWidth;
-                      console.log(screenWidth);
-                      if(screenWidth<769){
+                         b=0;
+                          document.querySelector("#main")
+                      .addEventListener("click", function(event){
                           
+                     
+                      if(screenWidth<769 && b===0){
+                         
                            screenWidth= document.querySelector(".navbar-toggler") .click();
-                                    
+                             b=1;       
                           }
                         
            
                       });
                });
+           });
