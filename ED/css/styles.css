@@ -33,6 +33,18 @@ nav{
       
      padding:0;
     }
+#slide2{
+      color:#330033; 
+    
+    }
+#divLDC{
+       height:100px;
+    }
+#divLDC>h4{
+      padding-top:50px; 
+       
+    }
+
 .col-12{
        height:20px;
     }
@@ -50,6 +62,9 @@ nav{
 .cours{
      height:300px;
     /* border:1px solid black; */
+    }
+.modal-content{
+     color:#330033;
     }
 
 
