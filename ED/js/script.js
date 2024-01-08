@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", 
       function (event){ 
-              document.querySelector(".navbar-toggler")
-                      .addEventListener("blur", function(event){
+              document.querySelector("*")
+                      .addEventListener("click", function(event){
                       let screenWidth = window.innerWidth;
                         
                        
