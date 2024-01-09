@@ -60,7 +60,8 @@ nav{
     font-size:0.5em;
 }
 .cours{
-     height:300px;
+     height:400px;
+    position:relative;
     /* border:1px solid black; */
     }
 .modal-content{
@@ -89,5 +90,12 @@ nav{
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
-
+.cours>button{
+   
+    position : absolute ;
+    bottom:50px;
+    right:30px;
+    left:30px;
+   
+    }
 
