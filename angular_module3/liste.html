@@ -5,7 +5,13 @@
   <ol>
      <br>
     <li ng-repeat="items in list.found"> 
-      {{items.name}}  <br>
+      <ul>
+          <li> {{items.short_name}}</li>
+          <li>{{items.name}} </li>
+          <li>{{items.description}}  </li>
+
+      </ul>
+      
     <button class="btn btn-primary" ng-click="list.onRemove({index: $index})">Don't want this one!</button>
 
   </ol>
