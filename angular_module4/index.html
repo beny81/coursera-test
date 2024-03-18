@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+<head>
+  <title>Restaurant</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- angular_fichier -->
+  <script src="js/angular.min.js"></script>
+  <!-- <script src="js/angular-ui-router.min.js"></script> -->
+
+  <!-- module -->
+  <script src="js/module/menuapp.module.js"></script>
+  <script src="js/module/data.module.js"></script>
+  <script  src="js/module/angular-ui-router.min.js"></script>
+  <script src="js/component/spinner.js"></script>
+
+  <!-- service -->
+  <script src="js/service/menudata.service.js"></script>
+
+  <!-- routing folder -->
+<script src="js/routes.js"></script>
+  <!-- component -->
+  <script src="js/component/categories.component.js"></script>
+  <script src="js/component/items.component.js"></script>
+
+  <!-- controller folder -->
+  <script src="js/controllers/categoriesComponentController.js"></script>
+    <script src="js/controllers/CategoriesController.js"></script>
+    <script src="js/controllers/itemsController.js"></script>
+    <script src="js/controllers/itemsComponentController.js"></script>
+
+
+
+
+
+</head>
+<body>
+   <spinner processing="$ctrl.processing"></spinner>
+
+ <ui-view></ui-view>
+</body>
+</html>
