@@ -1,0 +1,12 @@
+<ul>
+    <li ng-repeat="item in $ctrl.listItems.menu_items">
+       {{item.name}}
+        <ul>
+             
+             <li> {{item.short_name}}</li>
+             <li>{{item.description}}</li>
+             <li>&#36;{{item.price_large}}</li>
+
+        </ul> 
+    </li>
+</ul>

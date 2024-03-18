@@ -1,0 +1,14 @@
+<div class="container">
+    <nav class=" text-center bg-body-tertiary">  <h1 >Welcome to our Restaurant</h1></nav>
+    <a href="" ui-sref="home"  class="link-primary"> <span > Home</span>  </a>
+    <a href="" ui-sref="categories" class="link-primary"><span class="primary">&lt; Categories</span> </a>
+    <a href=""  class="link-secondary"><span class="primary">&lt; {{$ctrl.listItems.category.name}}</span> </a>
+    <hr>
+    {{$ctrl.listItems.category.special_instructions}}  
+    <hr>
+
+   <items listItems="$ctrl.listItems"></items>
+
+
+ </div>
+
