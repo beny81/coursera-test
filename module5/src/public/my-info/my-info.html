@@ -1,0 +1,48 @@
+<div class="container">
+    <h2  class="text-center">Registered Information</h2>
+    <hr>
+    <div ng-if="signCtrl.verify !=0">
+        <div>First name : {{signCtrl.user.firstName}}</div>
+        <hr>
+        <div>Last name : {{signCtrl.user.lastName}}</div>
+        <hr>
+        <div>Email : {{signCtrl.user.email}}</div>
+        <hr>
+        <div>Phone number : {{signCtrl.user.phoneNumber}}</div>
+        <hr>
+        <div class="text-center"> Favorite menu item</div>
+        <br>
+        <div class="menu-item-tile col-md-6">
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="menu-item-photo">
+                  <div>{{signCtrl.userFavMenu.short_name}}</div>
+                  <img class="img-responsive" width="250" height="150" 
+                    ng-src="images/menu/{{signCtrl.user.favCategory[0]}}/{{signCtrl.userFavMenu.short_name}}.jpg" 
+                    alt="{{signCtrl.userFavMenu.name}}">
+                </div>
+                <div class="menu-item-price">{{signCtrl.userFavMenu.price_small | currency}}<span> 
+                    {{signCtrl.userFavMenu.small_portion_name}}</span> {{signCtrl.userFavMenu.price_large | currency}} 
+                    <span>{{signCtrl.userFavMenu.large_portion_name}}</span></div>
+              </div>
+              <div class="menu-item-description col-sm-7">
+                <h3 class="menu-item-title">{{signCtrl.userFavMenu.name}}</h3>
+                <p class="menu-item-details">{{signCtrl.userFavMenu.description}}</p>
+              </div>
+            </div>
+            <hr class="visible-xs">
+          </div>
+          
+
+
+
+    </div>
+
+  
+    <div ng-if='signCtrl.verify ==0'>
+        <div> Not Signed Up Yet. <a ui-sref="public.signUp"> Sign up Now!</a> </div>
+
+    </div>
+    
+
+</div>
