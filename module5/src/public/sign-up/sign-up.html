@@ -1,0 +1,50 @@
+<div class="container">
+    <h2  class="text-center">Sign Up </h2>
+    <div class="text-center">
+       The newsletter will help you to never miss anything important 
+    </div>
+    <form name="formName" novalidate>
+        <div class="mb-3">
+            <label for="InputFirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="InputFirstName" name="InputFirstName" ng-model="signCtrl.user.firstName" required>
+            <span ng-if="formName.InputFirstName.$error.required && formName.InputFirstName.$touched"> First Name is required</span>
+          </div>
+        
+        <div class="mb-3">
+            <label for="InputLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="InputLastName" name="InputLastName" ng-model="signCtrl.user.lastName" required>
+            <span ng-if="formName.InputLastName.$error.required && formName.InputLastName.$touched"> Last Name is required</span>
+
+        </div>  
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email"placeholder="myemail@user.default" class="form-control" id="exampleInputEmail1"
+                name="exampleInputEmail1" aria-describedby="emailHelp"  ng-model="signCtrl.user.email" required>
+          <span ng-if="formName.exampleInputEmail1.$error.required && formName.exampleInputEmail1.$touched"> Email is required</span>
+
+          <div id="emailHelp" class="form-text smallT">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-4">
+          <label for="InputPhoneNumber" class="form-label">Phone Number</label>
+          <input type="number" placeholder="###-###-####" class="form-control" 
+                 name="InputPhoneNumber" id="InputPhoneNumber"  ng-model="signCtrl.user.phoneNumber" required>
+          <span ng-if="formName.InputPhoneNumber.$error.required && formName.InputPhoneNumber.$touched"> Phone Number is required</span>
+
+          <div class="form-text smallT">We'll never share your phone number with anyone else.</div>
+
+        </div>
+        <div class="mb-3">
+            <label for="InputFavMenu" class="form-label">The menu number that's your favorite dish</label>
+            <input type="text" placeholder="The menu number is the short_name attribute of each menu item" 
+                    class="form-control" name="InputFavMenu" id="InputFavMenu"  ng-model="signCtrl.user.favoriteDish" required>
+                    <span ng-if="formName.InputFavMenu.$error.required && formName.InputFavMenu.$touched"> Menu number is required</span>
+                    <span ng-if="signCtrl.itIsNull==true">No such menu number exists</span>
+          </div>
+        <button  ng-disabled="formName.$invalid" ng-click="signCtrl.verifyToSave()" type="submit" class="btn btn-primary">Submit</button>
+      <div ng-if="signCtrl.itIsNull==false">Your information has been saved</div>
+    </form>
+  
+
+  
+  </div>
+  
